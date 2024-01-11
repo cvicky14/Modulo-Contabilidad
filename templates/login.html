@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/ds.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-content">
+            <div class="login-image">
+                <img src="/static/2.jpg" alt="Imagen de inicio de sesión">
+            </div>
+            <div class="login-box">
+                <h1>LOG IN</h1>
+                <form method="POST" action="/login">
+                    <div class="input-container">
+                        <label for="username" class="rounded-label">Usuario</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="password" class="rounded-label">Contraseña</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Ingresar</button>
+                </form>
+                <!--mensaje de error -->
+                {% if error_message %}
+                    <p class="error-message">{{ error_message }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
