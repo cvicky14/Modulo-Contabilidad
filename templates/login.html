@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/ds.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-content">
+            <div class="login-image">
+                <img src="../static/css/2.jpg" alt="Imagen de inicio de sesión">
+            </div>
+            <div class="login-box">
+                <h1>LOG IN</h1>
+                <form id="login-form">
+                    <div class="input-container">
+                        <label for="username" class="rounded-label">Usuario</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="password" class="rounded-label">Contraseña</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+                </form>
+                <!--mensaje de error -->
+                <div id="error-message"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/proyecto2.0/static/js/login.js"></script>
+</body>
+</html>

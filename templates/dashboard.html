@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/dsmenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header class="header-container">
+        <h1 class="header-text"><i class="fas fa-calculator"></i> Módulo Contabilidad</h1>
+        <div class="profile-container">
+            <i id="profileIcon" class="fas fa-user-circle"></i>
+            <div id="perfil-container" class="profile">
+                <div id="perfil">
+                    <!-- Contenido del perfil -->
+                </div>
+                <button id="logoutButton" class="logout-button">Logout <i class="fas fa-sign-out-alt"></i></button>
+            </div>
+        </div>
+    </header>
+    <div id="dashboard-data">
+        <!-- Los datos del dashboard se cargarán aquí -->
+    </div>
+    <div id="empresas-list">
+            <!--Nombres de Empresas-->
+    </div>
+    <div id="tabla-div" class="tabla-cierre-anual">
+        <!-- Aquí se mostrará la tabla de movimientos para realizar el cierre-->
+    </div>
+    <script>
+        // JavaScript para mostrar/ocultar el perfil y el botón de logout
+        const profileIcon = document.getElementById("profileIcon");
+        const perfilContainer = document.getElementById("perfil-container");
+
+        profileIcon.addEventListener("click", () => {
+            if (perfilContainer.style.display === "none" || perfilContainer.style.display === "") {
+                perfilContainer.style.display = "block";
+            } else {
+                perfilContainer.style.display = "none";
+            }
+        });
+    </script>
+    <script src="/proyecto2.0/static/js/dashboard.js"></script>
+    <script src="/proyecto2.0/static/js/logout.js"></script>
+    <script src="/proyecto2.0/static/js/empresas.js"></script>
+    <script src="/proyecto2.0/static/js/cierre.js"></script>
+    <script src="/proyecto2.0/static/js/movimientos.js"></script>
+    <script src="/proyecto2.0/static/js/CuentasC.js"></script>
+</body>
+</html>
